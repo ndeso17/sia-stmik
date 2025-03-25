@@ -52,8 +52,11 @@ npm start
 #### UI/UX
 
 - [x] Sidebar, submenu.
-- [ ] Header
-- [ ] Konten Dashboard
+- [x] Header
+- [x] Konten Dashboard
+- [ ] Chat
+- [ ] View Details Notif
+- [ ] Search Menu / Module Ajar
 
 ---
 
