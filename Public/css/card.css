@@ -1,0 +1,62 @@
+/* Card */
+.card {
+  width: 100%;
+  min-height: 120px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Menambahkan transisi untuk semua properti yang berubah */
+}
+
+.card-body:hover {
+  background-color: var(--blue);
+  box-shadow: 0 4px 12px rgb(255, 255, 255);
+  transform: scale(1.02); /* Membuat card sedikit membesar saat hover */
+}
+
+.card-body:hover .info .card-title {
+  color: var(--white200);
+}
+
+.card-body:hover .info .card-text,
+.card-body:hover .icons ion-icon {
+  color: var(--white500);
+}
+
+/* Optional: untuk memastikan kembali ke posisi awal saat tidak hover */
+.card-body:not(:hover) {
+  transform: scale(1); /* Kembali ke ukuran normal */
+}
+
+.card-body .info .card-title {
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--blue);
+  margin: 0;
+}
+
+.card-body .info .card-text {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--black2);
+  margin: 0;
+}
+
+.card-body .icons {
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body .icons ion-icon {
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--black2);
+}

@@ -1,0 +1,51 @@
+<div class="container mt-3">
+  <div class="row bungkus">
+    <div class="col-8">
+      <div class="cardHeader">
+        <h2>Grafik IPK</h2>
+        <a href="#" class="btn" id="toggleChartBtn">Ganti Chart</a>
+      </div>
+      <canvas
+        id="ipkChart"
+        height="200"
+        style="
+          background: white;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          overflow: hidden;
+          padding: 2rem 1rem;
+        "
+      ></canvas>
+    </div>
+    <div class="col-4">
+      <div class="cardHeader">
+        <h2>Calendar</h2>
+      </div>
+
+      <div class="wrapper-calendar">
+        <div class="header-calendar">
+          <p class="current-date-calendar"></p>
+          <div class="icons-calendar">
+            <span id="prev"
+              ><ion-icon name="caret-back-circle-outline"></ion-icon
+            ></span>
+            <span id="next"
+              ><ion-icon name="caret-forward-circle-outline"></ion-icon
+            ></span>
+          </div>
+        </div>
+        <div class="body-calendar">
+          <ul class="weeks">
+            <li>Minggu</li>
+            <li>Senin</li>
+            <li>Selasa</li>
+            <li>Rabu</li>
+            <li>Kamis</li>
+            <li>Jum'at</li>
+            <li>Sabtu</li>
+          </ul>
+          <ul class="days"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

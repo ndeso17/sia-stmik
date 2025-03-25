@@ -1,0 +1,195 @@
+/* Card Header */
+div.row.bungkus {
+  background: var(--white);
+  padding: 1rem 0rem;
+  margin-bottom: 1rem;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.cardHeader h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--black1);
+}
+
+.cardHeader .btn {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.cardHeader .btn:hover {
+  background-color: #165e9b;
+}
+
+/* Tabel Presensi */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+thead tr {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+thead td {
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+tbody tr {
+  border-bottom: 1px solid var(--white200);
+  color: rebeccapurple;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+tbody td {
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--black1);
+}
+
+tbody tr:hover {
+  background-color: var(--bluemud);
+  color: var(--white);
+  cursor: pointer;
+}
+
+tbody tr:hover td {
+  color: var(--white);
+}
+
+/* Status */
+.status {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.status.delivered {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status.return {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Tabel Mahasiswa Aktif */
+.col-4 table {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.col-4 tbody tr {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid var(--white200);
+}
+
+.col-4 tbody tr:hover {
+  background-color: var(--bluemud);
+  color: var(--white);
+}
+
+.col-4 tbody tr:hover td h4 {
+  color: var(--white);
+}
+
+.col-4 tbody tr:last-child {
+  border-bottom: none;
+}
+
+.col-4 td {
+  padding: 0;
+}
+
+.imgBx {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+
+.imgBx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.col-4 h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--black1);
+  margin: 0;
+}
+
+.col-4 h4 span {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.online {
+  color: var(--online);
+}
+
+.offline {
+  color: var(--offline);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .container.mt-5 {
+    padding: 0 1rem;
+  }
+
+  .col-8,
+  .col-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  thead td,
+  tbody td {
+    font-size: 0.8rem;
+    padding: 0.75rem;
+  }
+
+  .cardHeader h2 {
+    font-size: 1.25rem;
+  }
+
+  .cardHeader .btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
